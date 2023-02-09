@@ -36,6 +36,13 @@ spec:
             httpGet:
               path: /
               port: http
+      destination:
+        namespace: helm-guestbook
+        server: {{ .Values.spec.destination.server }}
+      source:
+        path: helm-guestbook
+        repoURL: {{ .Values.spec.source.repoURL }}
+        targetRevision: {{ .Values.spec.source.targetRevision }}     
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}

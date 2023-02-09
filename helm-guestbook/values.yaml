@@ -9,6 +9,13 @@ image:
   tag: 0.1
   pullPolicy: IfNotPresent
 
+spec:
+  destination:
+    server: drona-gitops-dns-7d83095d.hcp.eastus.azmk8s.io
+  source:
+    repoURL: https://github.com/ValGenesis/AutoDeploywithGitops.git
+    targetRevision: HEAD
+
 service:
   type: ClusterIP
   port: 80
