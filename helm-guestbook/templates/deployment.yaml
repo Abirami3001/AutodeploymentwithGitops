@@ -35,7 +35,10 @@ spec:
           readinessProbe:
             httpGet:
               path: /
-              port: http          
+              port: http   
+      destination:
+        namespace: helm-guestbook
+        server: {{ .Values.spec.destination.server }}       
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
