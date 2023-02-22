@@ -1,6 +1,6 @@
 spec:
   destination:
-    server: drona-gitops-dns-7d83095d.hcp.eastus.azmk8s.io
+    server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/Abirami3001/AutodeploymentwithGitops.git
     targetRevision: HEAD
