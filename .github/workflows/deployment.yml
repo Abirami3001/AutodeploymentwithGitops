@@ -4,7 +4,7 @@
 name: Build and push the latest build to development environment - 4th Run
 
 on:
-  pull_request:
+  push:
     branches: [ "main" ]
     types: closed
 
