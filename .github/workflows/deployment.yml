@@ -6,7 +6,6 @@ name: Build and push the latest build to development environment - 4th Run
 on:
   push:
     branches: [ "main" ]
-    types: closed
 
 jobs:
   build:
