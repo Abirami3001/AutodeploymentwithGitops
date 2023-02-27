@@ -32,4 +32,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{'Drona'}}/AutodeploymentwithGitops-dev:v1.0
+        tags: ${{secrets.ACR_NAME}}/AutodeploymentwithGitops-dev:v1.0
